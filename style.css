@@ -1,0 +1,180 @@
+/* START */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+
+  text-rendering: optimizeSpeed;
+
+  color: hsl(234, 12%, 34%);
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+.container {
+  max-width: calc(1100rem / 16);
+
+  margin-bottom: calc(32rem / 16);
+  padding: calc(64rem / 16) calc(48rem / 16);
+}
+
+/* START */
+
+/* CONTENT */
+.content {
+  text-align: center;
+}
+
+.content-subheading {
+  margin-bottom: calc(12rem / 16);
+
+  font-size: calc(30rem / 16);
+  font-weight: 200;
+  letter-spacing: 1.1;
+
+  color: hsl(234, 12%, 34%);
+}
+
+.content-heading {
+  margin-bottom: calc(24rem / 16);
+
+  font-size: calc(30rem / 16);
+  font-weight: 600;
+  letter-spacing: 1.1;
+
+  color: hsl(234, 12%, 34%);
+}
+
+.content-text {
+  margin-bottom: calc(48rem / 16);
+  padding: 0 calc(280rem / 16);
+
+  font-size: calc(14rem / 16);
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+
+  color: hsl(229, 6%, 66%);
+}
+
+/* CARD GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  gap: calc(32rem / 16);
+}
+
+.card {
+  position: relative;
+
+  padding: calc(28rem / 16);
+
+  border-radius: 5px;
+  box-shadow: 0 1rem 1.5rem hsla(234, 12%, 34%, 0.2);
+}
+
+.card-supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.card-team-builder {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card-karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card-calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+/* CARD TEXT */
+.card-heading {
+  margin-bottom: calc(14rem / 16);
+
+  font-size: calc(18rem / 16);
+}
+
+.card-text {
+  margin-bottom: calc(32rem / 16);
+
+  font-size: calc(12rem / 16);
+  line-height: 1.7;
+
+  color: hsl(229, 6%, 66%);
+}
+
+/* ICON */
+.icon {
+  float: right;
+}
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
