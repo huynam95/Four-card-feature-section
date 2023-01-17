@@ -23,8 +23,6 @@ body {
 
   color: hsl(234, 12%, 34%);
 
-  overflow: hidden;
-
   display: flex;
   justify-content: center;
 }
@@ -115,14 +113,13 @@ select {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
   gap: calc(32rem / 16);
 }
 
 .card {
   position: relative;
-
   padding: calc(28rem / 16);
 
   border-radius: 5px;
@@ -170,6 +167,47 @@ select {
 /* ICON */
 .icon {
   float: right;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 61em) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 70%;
+  }
+
+  .content-text {
+    padding: 0 calc(0rem / 16);
+  }
+}
+
+@media (max-width: 36em) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 30em) {
+  .card {
+    width: 100%;
+  }
+
+  .content-heading {
+    font-size: calc(20rem / 16);
+  }
+
+  .content-subheading {
+    font-size: calc(20rem / 16);
+  }
+
+  .content-text {
+    font-size: calc(12rem / 16);
+  }
 }
 
 /*
